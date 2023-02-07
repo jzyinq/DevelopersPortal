@@ -1,0 +1,86 @@
+get:
+  tags:
+    - Goals
+  summary: Get goal
+  description: |
+    Returns a definition of a specific goal.
+    Please note that each request must be authenticated.
+  parameters:
+    - $ref: '../index.yaml#/components/parameters/Id'
+    - $ref: '../index.yaml#/components/parameters/WebsiteId'
+  responses:
+    '200':
+      description: OK
+      content:
+        application/vnd.api+json:
+          schema:
+            type: object
+            required:
+              - data
+            properties:
+              data:
+                $ref: '../index.yaml#/components/schemas/GoalDetails'
+    '403':
+      description: Forbidden
+put:
+  tags:
+    - Goals
+  summary: Update goal
+  description: |
+    Update an existing goal.
+    Please note that each request must be authenticated.
+  parameters:
+    - $ref: '../index.yaml#/components/parameters/Id'
+  requestBody:
+    required: true
+    content:
+      application/vnd.api+json:
+        schema:
+          type: object
+          required:
+            - data
+          properties:
+            data:
+              type: object
+              allOf:
+                - $ref: '../index.yaml#/components/schemas/Goal'
+                - properties:
+                    id:
+                      type: string
+                      description: ID of a Goal.
+                      format: uuid
+                      readOnly: false
+                      example: 677fe0d3-b4f7-43ed-852d-1a9e7b8e59fb
+  responses:
+    '200':
+      description: OK
+      content:
+        application/vnd.api+json:
+          schema:
+            type: object
+            required:
+              - data
+            properties:
+              data:
+                $ref: '../index.yaml#/components/schemas/GoalDetails'
+    '400':
+      description: Bad Request
+    '403':
+      description: Forbidden
+delete:
+  tags:
+    - Goals
+  summary: Delete goal
+  description: |
+    Delete the specified goal.
+    Please note that each request must be authenticated.
+  parameters:
+    - $ref: '../index.yaml#/components/parameters/Id'
+    - $ref: '../index.yaml#/components/parameters/WebsiteId'
+  responses:
+    '204':
+      description: No Content
+    '403':
+      description: Forbidden
+    '404':
+      description: Not Found
