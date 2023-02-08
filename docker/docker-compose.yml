@@ -1,0 +1,6 @@
+version: "3.3"
+services:
+  algolia-docsearch:
+    image: algolia/docsearch-scraper
+    volumes:
+      - .
