@@ -64,17 +64,23 @@ const config = {
       // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
       navbar: {
-        title: 'My Site',
+        title: 'Developers',
         logo: {
-          alt: 'My Site Logo',
-          src: 'img/logo.svg',
+          alt: 'PiwikPRO Developers Logo',
+          src: 'img/piwik-logo.svgz',
         },
         items: [
           {
             type: 'doc',
-            docId: 'intro',
+            docId: 'tutorial/intro',
             position: 'left',
             label: 'Tutorial',
+          },
+          {
+            type: 'doc',
+            docId: 'analytics/index',
+            position: 'left',
+            label: 'Analytics',
           },
           {to: '/blog', label: 'Blog', position: 'left'},
           {
