@@ -1,0 +1,9 @@
+{
+  "label": "Mobile",
+  "collapsible": true,
+  "collapsed": false,
+  "className": "red",
+  "customProps": {
+    "description": "This description can be used in the swizzled DocCard"
+  }
+}
