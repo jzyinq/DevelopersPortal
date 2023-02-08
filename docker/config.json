@@ -1,7 +1,7 @@
 {
   "index_name": "piwik-pro-docs",
   "start_urls": [
-    "http://0.0.0.0:3000/docs/analytics"
+    "http://localhost:3000/docs/analytics/columns"
   ],
   "sitemap_urls": [
     "http://0.0.0.0:3000/sitemap.xml"
