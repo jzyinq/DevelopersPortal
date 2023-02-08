@@ -81,9 +81,13 @@ Base Metrics
 
 The table below lists core dimensions that may be used in queries.
 
-Note: "Database type" column presents the type of source column of the
+:::note Note: 
+
+"Database type" column presents the type of source column of the
 dimension (in case of enum - type of the ID, in case of dynamic
 dimensions - not applicable).
+
+:::
 
 | Dimension Name                         | Column ID                                   | Scope   | Type         | Database Type       | Nullable | Notes                                                                                    |
 | -------------------------------------- | ------------------------------------------- | ------- | ------------ | ------------------- | -------- | ---------------------------------------------------------------------------------------- |
