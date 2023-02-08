@@ -1,0 +1,58 @@
+[
+    [
+        1,
+        "Page view"
+    ],
+    [
+        2,
+        "Outlink"
+    ],
+    [
+        3,
+        "Download"
+    ],
+    [
+        4,
+        "Search"
+    ],
+    [
+        5,
+        "Custom event"
+    ],
+    [
+        6,
+        "Content impression"
+    ],
+    [
+        7,
+        "Content interaction"
+    ],
+    [
+        8,
+        "Goal conversion"
+    ],
+    [
+        9,
+        "Ecommerce conversion"
+    ],
+    [
+        10,
+        "Abandoned cart"
+    ],
+    [
+        11,
+        "SharePoint"
+    ],
+    [
+        12,
+        "Consent form impression"
+    ],
+    [
+        13,
+        "Consent form click"
+    ],
+    [
+        14,
+        "Consent decision"
+    ]
+]

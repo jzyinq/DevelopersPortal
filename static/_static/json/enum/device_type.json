@@ -1,0 +1,58 @@
+[
+    [
+        0,
+        "Desktop"
+    ],
+    [
+        1,
+        "Smartphone"
+    ],
+    [
+        2,
+        "Tablet"
+    ],
+    [
+        3,
+        "Feature phone"
+    ],
+    [
+        4,
+        "Console"
+    ],
+    [
+        5,
+        "TV"
+    ],
+    [
+        6,
+        "Car browser"
+    ],
+    [
+        7,
+        "Smart display"
+    ],
+    [
+        8,
+        "Camera"
+    ],
+    [
+        9,
+        "Portable media player"
+    ],
+    [
+        10,
+        "Phablet"
+    ],
+    [
+        11,
+        "Smart speaker"
+    ],
+    [
+        12,
+        "Wearable"
+    ],
+    [
+        13,
+        "Peripheral"
+    ]
+]
