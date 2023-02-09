@@ -32,6 +32,8 @@ const config = {
     locales: ['en'],
   },
 
+  plugins: [require.resolve('docusaurus-lunr-search')],
+
   presets: [
     [
       'classic',
@@ -57,7 +59,6 @@ const config = {
       }),
     ],
   ],
-  themes: ['docusaurus-theme-search-typesense'],
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
@@ -144,26 +145,6 @@ const config = {
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
-      },
-      typesense: {
-        typesenseCollectionName: 'piwik-pro-docs', // Replace with your own doc site's name. Should match the collection name in the scraper settings.
-
-        typesenseServerConfig: {
-          nodes: [
-            {
-              host: '0.0.0.0',
-              port: 8108,
-              protocol: 'http',
-            },
-          ],
-          apiKey: 'xyz',
-        },
-
-        // Optional: Typesense search parameters: https://typesense.org/docs/0.21.0/api/search.md#search-parameters
-        typesenseSearchParameters: {},
-
-        // Optional
-        contextualSearch: true,
       },
     }),
 };
