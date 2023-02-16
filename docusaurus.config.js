@@ -90,9 +90,9 @@ const config = {
         items: [
           {
             type: 'doc',
-            docId: 'tutorial/intro',
+            docId: 'webapi/index',
             position: 'left',
-            label: 'Tutorial',
+            label: 'Web API',
           },
           {
             type: 'doc',
