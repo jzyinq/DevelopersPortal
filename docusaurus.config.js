@@ -64,6 +64,7 @@ const config = {
         // Plugin Options for loading OpenAPI files
         specs: [
           {
+            id: 'piwik-web-api',
             spec: 'static/api.json',
             route: '/api/',
           },
