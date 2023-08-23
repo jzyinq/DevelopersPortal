@@ -12,6 +12,6 @@ API is at hand and ready to be used in your next project.
 
 - [Getting Started](getting-started/index.md) 
 - [Resources](resources/index.md) 
-- [Methods](methods/index.md)
+- [Methods](methods.md)
 
 
