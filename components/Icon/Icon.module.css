@@ -1,0 +1,457 @@
+@value vWhite, vUiHueDark, vUiHue, vInkLightest, vInk, vBlue, vViolet, vVioletDark, vRed, vOrange, vYellow, vGreen, vTeal, vPinkDark from "../../styles/colors.module.css";
+@value vSizeXXS: 8px;
+@value vSizeXS: 12px;
+@value vSizeS: 16px;
+@value vSizeM: 24px;
+@value vSizeL: 32px;
+@value vSizeXL: 48px;
+
+.icon {
+  display: inline-block;
+  outline: none;
+
+  * {
+    transform: rotate(0deg);
+  }
+}
+
+.default {
+  width: vSizeS;
+  height: vSizeS;
+  flex-shrink: 0; /* Prevents shrinking of empty icon */
+  line-height: vSizeS;
+
+  &.filled,
+  &.invertedFill {
+    width: calc(vSizeS + 16px);
+    height: calc(vSizeS + 16px);
+    line-height: calc(vSizeS + 16px);
+
+    &.fillSize-large {
+      width: calc(vSizeS + 20px);
+      height: calc(vSizeS + 20px);
+      line-height: calc(vSizeS + 20px);
+    }
+
+    &.fillSize-extraLarge {
+      width: calc(vSizeS + 24px);
+      height: calc(vSizeS + 24px);
+      line-height: calc(vSizeS + 24px);
+    }
+  }
+
+  .icon {
+    width: vSizeS;
+    height: vSizeS;
+    line-height: vSizeS;
+  }
+
+  svg {
+    width: vSizeS;
+    height: vSizeS;
+  }
+}
+
+.tiny {
+  width: vSizeXXS;
+  height: vSizeXXS;
+  flex-shrink: 0; /* Prevents shrinking of empty icon */
+  line-height: vSizeXXS;
+
+  &.filled,
+  &.invertedFill {
+    width: calc(vSizeXXS + 16px);
+    height: calc(vSizeXXS + 16px);
+    line-height: calc(vSizeXXS + 16px);
+
+    &.fillSize-large {
+      width: calc(vSizeXXS + 20px);
+      height: calc(vSizeXXS + 20px);
+      line-height: calc(vSizeXXS + 20px);
+    }
+
+    &.fillSize-extraLarge {
+      width: calc(vSizeXXS + 24px);
+      height: calc(vSizeXXS + 24px);
+      line-height: calc(vSizeXXS + 24px);
+    }
+  }
+
+  .icon {
+    width: vSizeXXS;
+    height: vSizeXXS;
+    line-height: 6px;
+  }
+
+  svg {
+    width: vSizeXXS;
+    height: vSizeXXS;
+  }
+}
+
+.small {
+  width: vSizeXS;
+  height: vSizeXS;
+  flex-shrink: 0; /* Prevents shrinking of empty icon */
+  line-height: vSizeXS;
+
+  &.filled,
+  &.invertedFill {
+    width: calc(vSizeXS + 12px);
+    height: calc(vSizeXS + 12px);
+    line-height: calc(vSizeXS + 12px);
+
+    &.fillSize-large {
+      width: calc(vSizeXS + 20px);
+      height: calc(vSizeXS + 20px);
+      line-height: calc(vSizeXS + 20px);
+    }
+
+    &.fillSize-extraLarge {
+      width: calc(vSizeXS + 24px);
+      height: calc(vSizeXS + 24px);
+      line-height: calc(vSizeXS + 24px);
+    }
+  }
+
+  .icon {
+    width: vSizeXS;
+    height: vSizeXS;
+    line-height: vSizeXS;
+  }
+
+  svg {
+    width: vSizeXS;
+    height: vSizeXS;
+  }
+}
+
+.medium {
+  width: vSizeM;
+  height: vSizeM;
+  flex-shrink: 0; /* Prevents shrinking of empty icon */
+  line-height: vSizeM;
+
+  &.filled,
+  &.invertedFill {
+    width: calc(vSizeM + 16px);
+    height: calc(vSizeM + 16px);
+    line-height: calc(vSizeM + 16px);
+
+    &.fillSize-large {
+      width: calc(vSizeM + 20px);
+      height: calc(vSizeM + 20px);
+      line-height: calc(vSizeM + 20px);
+    }
+
+    &.fillSize-extraLarge {
+      width: calc(vSizeM + 24px);
+      height: calc(vSizeM + 24px);
+      line-height: calc(vSizeM + 24px);
+    }
+  }
+
+  .icon {
+    width: vSizeM;
+    height: vSizeM;
+    line-height: vSizeM;
+  }
+
+  svg {
+    width: vSizeM;
+    height: vSizeM;
+  }
+}
+
+.large {
+  width: vSizeL;
+  height: vSizeL;
+  flex-shrink: 0; /* Prevents shrinking of empty icon */
+  line-height: vSizeL;
+
+  &.filled,
+  &.invertedFill {
+    width: calc(vSizeL + 16px);
+    height: calc(vSizeL + 16px);
+    line-height: calc(vSizeL + 16px);
+
+    &.fillSize-large {
+      width: calc(vSizeL + 20px);
+      height: calc(vSizeL + 20px);
+      line-height: calc(vSizeL + 20px);
+    }
+
+    &.fillSize-extraLarge {
+      width: calc(vSizeL + 24px);
+      height: calc(vSizeL + 24px);
+      line-height: calc(vSizeL + 24px);
+    }
+  }
+
+  .icon {
+    width: vSizeL;
+    height: vSizeL;
+    line-height: vSizeL;
+  }
+
+  svg {
+    width: vSizeL;
+    height: vSizeL;
+  }
+}
+
+.extraLarge {
+  width: vSizeXL;
+  height: vSizeXL;
+  flex-shrink: 0; /* Prevents shrinking of empty icon */
+  line-height: vSizeXL;
+
+  &.filled,
+  &.invertedFill {
+    width: calc(vSizeXL + 16px);
+    height: calc(vSizeXL + 16px);
+    line-height: calc(vSizeXL + 16px);
+
+    &.fillSize-large {
+      width: calc(vSizeXL + 20px);
+      height: calc(vSizeXL + 20px);
+      line-height: calc(vSizeXL + 20px);
+    }
+
+    &.fillSize-extraLarge {
+      width: calc(vSizeXL + 24px);
+      height: calc(vSizeXL + 24px);
+      line-height: calc(vSizeXL + 24px);
+    }
+  }
+
+  .icon {
+    width: vSizeXL;
+    height: vSizeXL;
+    line-height: vSizeXL;
+  }
+
+  svg {
+    width: vSizeXL;
+    height: vSizeXL;
+  }
+}
+
+.icon-wrapper {
+  position: relative;
+
+  &.filled,
+  &.invertedFill {
+    border-radius: 50%;
+    display: inline-flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+  }
+
+  &.filled {
+    &.wrapper-default { background: vInk; }
+
+    &.wrapper-light-gray { background: vUiHueDark; }
+
+    &.wrapper-gray { background: vInkLightest; }
+
+    &.wrapper-blue { background: vBlue; }
+
+    &.wrapper-violet { background: vViolet; }
+
+    &.wrapper-dark-violet { background: vVioletDark; }
+
+    &.wrapper-dark-pink { background: vPinkDark; }
+
+    &.wrapper-red { background: vRed; }
+
+    &.wrapper-orange { background: vOrange; }
+
+    &.wrapper-yellow { background: vYellow; }
+
+    &.wrapper-green { background: vGreen; }
+
+    &.wrapper-teal { background: vTeal; }
+
+    &.wrapper-white { background: vWhite; }
+  }
+
+  &.invertedFill {
+    background: vWhite;
+    border: 1px solid;
+
+    &.wrapper-default { border-color: vInk; }
+
+    &.wrapper-light-gray { border-color: vUiHueDark; }
+
+    &.wrapper-gray { border-color: vInkLightest; }
+
+    &.wrapper-blue { border-color: vBlue; }
+
+    &.wrapper-violet { border-color: vViolet; }
+
+    &.wrapper-dark-violet { border-color: vVioletDark; }
+
+    &.wrapper-dark-pink { border-color: vPinkDark; }
+
+    &.wrapper-red { border-color: vRed; }
+
+    &.wrapper-orange { border-color: vOrange; }
+
+    &.wrapper-yellow { border-color: vYellow; }
+
+    &.wrapper-green { border-color: vGreen; }
+
+    &.wrapper-teal { border-color: vTeal; }
+
+    &.wrapper-white { border-color: vWhite; }
+  }
+
+  .badge {
+    font-size: 12px;
+    position: absolute;
+    bottom: -12px;
+    right: -8px;
+    background: vOrange;
+    color: vWhite;
+    font-weight: bold;
+    padding: 4px;
+    height: 24px;
+    min-width: 24px;
+    border-radius: 24px;
+    border: 2px solid vWhite;
+
+    .badge-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      height: 12px;
+
+      .badge-text {
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+        max-width: 50px;
+      }
+    }
+  }
+}
+
+.icon-default {
+  path,
+  polygon,
+  circle,
+  rect {
+    fill: vInk;
+  }
+}
+
+.icon-light-gray {
+  path,
+  polygon,
+  circle,
+  rect {
+    fill: vUiHueDark;
+  }
+}
+
+.icon-gray {
+  path,
+  polygon,
+  circle,
+  rect {
+    fill: vInkLightest;
+  }
+}
+
+.icon-blue {
+  path,
+  polygon,
+  circle,
+  rect {
+    fill: vBlue;
+  }
+}
+
+.icon-violet {
+  path,
+  polygon,
+  circle,
+  rect {
+    fill: vViolet;
+  }
+}
+
+.icon-dark-violet {
+  path,
+  polygon,
+  circle,
+  rect {
+    fill: vVioletDark;
+  }
+}
+
+.icon-dark-pink {
+  path,
+  polygon,
+  circle,
+  rect {
+    fill: vPinkDark;
+  }
+}
+
+.icon-red {
+  path,
+  polygon,
+  circle,
+  rect {
+    fill: vRed;
+  }
+}
+
+.icon-orange {
+  path,
+  polygon,
+  circle,
+  rect {
+    fill: vOrange;
+  }
+}
+
+.icon-yellow {
+  path,
+  polygon,
+  circle,
+  rect {
+    fill: vYellow;
+  }
+}
+
+.icon-green {
+  path,
+  polygon,
+  circle,
+  rect {
+    fill: vGreen;
+  }
+}
+
+.icon-teal {
+  path,
+  polygon,
+  circle,
+  rect {
+    fill: vTeal;
+  }
+}
+
+.icon-white {
+  path,
+  polygon,
+  circle,
+  rect {
+    fill: vWhite;
+  }
+}

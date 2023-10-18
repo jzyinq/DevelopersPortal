@@ -1,0 +1,4 @@
+@value vPopoverShadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+@value vRaised: 0 1px 1px 0 rgba(0, 0, 0, 0.1);
+@value vHover: 0 2px 1px 0 rgba(0, 0, 0, 0.1), 0 1px 1px 0 rgba(0, 0, 0, 0.1);
+@value vDragging: 0 16px 16px 0 rgba(0, 0, 0, 0.2);

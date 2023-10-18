@@ -1,0 +1,9 @@
+/* defining z-indexes for layers */
+@value vJustUnderContent: 99;
+@value vContent: 100;
+@value vJustAboveContent: 101;
+@value vHandler: 1001;
+@value vOverlay: 1500;
+@value vModal: 5000;
+@value vTooltip: 5001;
+@value vPopover: 5001;

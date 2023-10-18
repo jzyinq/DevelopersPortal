@@ -91,6 +91,12 @@ const config = {
         items: [
           {
             type: 'doc',
+            docId: 'custom-elements/index',
+            position: 'left',
+            label: 'Custom elements',
+          },
+          {
+            type: 'doc',
             docId: 'webapi/index',
             position: 'left',
             label: 'Web API',

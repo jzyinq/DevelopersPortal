@@ -1,0 +1,12 @@
+@value vWhite, vUiHueDark from "./colors.module.css";
+@value vPopoverShadow from "./shadows.module.css";
+@value vJustAboveContent from "./layers.module.css";
+
+.expanded {
+  position: absolute;
+  border: 1px solid vUiHueDark;
+  border-radius: 1px;
+  background-color: vWhite;
+  box-shadow: vPopoverShadow;
+  z-index: vJustAboveContent;
+}

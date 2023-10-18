@@ -1,0 +1,425 @@
+@value vWhite, vUiHueLight, vUiHueDark, vUiHue, vInk, vBlueLight, vBlueDark, vBlue, vRedDark, vRed, vRedLight, vGreenDark, vGreen from "../../styles/colors.module.css";
+@value vRaised from "../../styles/shadows.module.css";
+@value cut-text from "../../styles/cut-text.module.css";
+@value icon from "../../components/Icon/Icon.module.css";
+
+.button {
+  align-items: center;
+  border: 1px solid transparent;
+  border-radius: 1px;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: flex;
+  font-size: 14px;
+  font-weight: 600;
+  height: 34px;
+  justify-content: center;
+  min-width: 80px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  outline-style: none;
+  padding: 0 7px;
+  text-align: center;
+  transition-duration: 0.2s;
+  transform: translate3d(0, 0, 0);
+  width: auto;
+  position: relative;
+
+  /* Aligns vertically inline buttons with icons and text */
+  &::before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%;
+  }
+
+  /* ripple effect */
+  &:not(.subdued, .subdued-compact, .subdued-inverse)::after {
+    background-image: radial-gradient(circle, #999 10%, transparent 10%);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    content: "";
+    display: block;
+    height: 100%;
+    left: 0;
+    opacity: 0;
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    transform: scale(10, 10);
+    transition: transform 0.3s, opacity 1s;
+    width: 100%;
+  }
+
+  &:active:not(.subdued, .subdued-compact, .subdued-inverse)::after {
+    opacity: 0.2;
+    transform: scale(0, 0);
+    transition: 0s;
+  }
+
+  &:focus {
+    outline: vInk dashed 1px;
+    outline-offset: 1px;
+  }
+
+  &.size {
+    &-small:not(.breakLongContent) {
+      height: 26px;
+    }
+
+    &-large:not(.breakLongContent) {
+      height: 34px;
+    }
+  }
+}
+
+.badge {
+  display: inline-block;
+  text-align: center;
+  font-weight: 600;
+  height: 16px;
+  font-size: 12px;
+  border-radius: 16px;
+  padding: 0 6px;
+  margin: 0 4px;
+  line-height: 16px;
+}
+
+.icon + .text,
+.text + .icon {
+  margin-left: 8px;
+}
+
+.minimalWidth {
+  min-width: 32px;
+}
+
+.fullWidth {
+  width: 100%;
+}
+
+.disabled,
+.button:disabled {
+  border-color: transparent;
+  cursor: not-allowed;
+  opacity: 0.4;
+
+  &::after {
+    display: none;
+  }
+}
+
+.disabled:hover,
+.noHover:hover,
+.active,
+.button:active {
+  box-shadow: none !important;
+}
+
+.pending {
+  border-color: transparent;
+  cursor: wait;
+  opacity: 0.4;
+}
+
+.pending * {
+  margin: 0;
+}
+
+.default {
+  composes: button;
+  background-color: vWhite;
+  border-color: vUiHueDark;
+  box-shadow: vRaised;
+  color: vInk;
+
+  &:hover {
+    box-shadow: 0 0 2px 1px rgb(0 0 0 / 10%);
+  }
+
+  &.active {
+    background-color: vUiHueLight;
+    border-color: vUiHueDark;
+
+    .badge {
+      color: vUiHueLight;
+    }
+  }
+
+  .badge {
+    color: vWhite;
+    background-color: vInk;
+  }
+}
+
+.primary {
+  composes: button;
+  background-color: vBlue;
+  border-color: vBlueDark;
+  box-shadow: vRaised;
+  color: vWhite;
+
+  &:hover {
+    box-shadow: 0 1px 1px 0 rgb(0 0 0 / 5%), 0 0 2px 1px rgb(0 125 255 / 50%);
+  }
+
+  &::after {
+    background-image: radial-gradient(circle, vBlueDark 10%, transparent 10%);
+  }
+
+  &.active {
+    background-color: #0060c4;
+    border-color: #0060c4;
+
+    &::after {
+      background-image: radial-gradient(circle, #fff 10%, transparent 10%);
+    }
+
+    .badge {
+      color: #0060c4;
+    }
+  }
+
+  .badge {
+    color: vBlue;
+    background-color: vWhite;
+  }
+}
+
+.destructive {
+  composes: button;
+  background-color: vRed;
+  border-color: vRedDark;
+  box-shadow: vRaised;
+  color: vWhite;
+
+  &:hover {
+    box-shadow: 0 1px 1px 0 rgb(0 0 0 / 5%), 0 0 2px 1px rgb(227 48 27 / 50%);
+  }
+
+  &::after {
+    background-image: radial-gradient(circle, vRedDark 10%, transparent 10%);
+  }
+
+  &.active {
+    background-color: vRedDark;
+    border-color: vRedDark;
+
+    &::after {
+      background-image: radial-gradient(circle, #fff 10%, transparent 10%);
+    }
+
+    .badge {
+      color: vRedDark;
+    }
+  }
+
+  .badge {
+    color: vRed;
+    background-color: vWhite;
+  }
+}
+
+.destructive-simple {
+  composes: button;
+  background-color: transparent;
+  color: vRed;
+
+  &:not(.active, :disabled, .noHover):hover {
+    background-color: vRedLight;
+  }
+
+  &::after {
+    background-image: radial-gradient(circle, vRed 10%, transparent 10%);
+  }
+
+  &.active {
+    background-color: vRed;
+    border-color: vRed;
+    color: vWhite;
+
+    &::after {
+      background-image: radial-gradient(circle, #fff 10%, transparent 10%);
+    }
+
+    .badge {
+      color: vRed;
+      background-color: vWhite;
+    }
+  }
+
+  .badge {
+    color: vWhite;
+    background-color: vRed;
+  }
+}
+
+.constructive {
+  composes: button;
+  background-color: vGreen;
+  border-color: vGreenDark;
+  box-shadow: vRaised;
+  color: vWhite;
+
+  &:hover {
+    box-shadow: 0 1px 1px 0 rgb(0 0 0 / 5%), 0 0 2px 1px rgb(26 160 35 / 50%);
+  }
+
+  &::after {
+    background-image: radial-gradient(circle, vGreenDark 10%, transparent 10%);
+  }
+
+  &.active {
+    background-color: vGreenDark;
+    border-color: vGreenDark;
+
+    &::after {
+      background-image: radial-gradient(circle, #fff 10%, transparent 10%);
+    }
+
+    .badge {
+      color: vGreenDark;
+    }
+  }
+
+  .badge {
+    color: vGreen;
+    background-color: vWhite;
+  }
+}
+
+.simple,
+.rounded {
+  composes: button;
+  background-color: transparent;
+  color: vBlue;
+
+  &:not(.active, :disabled, .noHover):hover {
+    background-color: vBlueLight;
+  }
+
+  &::after {
+    background-image: radial-gradient(circle, vBlue 10%, transparent 10%);
+  }
+
+  &.active {
+    background-color: vBlue;
+    border-color: vBlue;
+    color: vWhite;
+
+    &::after {
+      background-image: radial-gradient(circle, #fff 10%, transparent 10%);
+    }
+
+    .badge {
+      color: vBlue;
+      background-color: vWhite;
+    }
+  }
+
+  .badge {
+    color: vWhite;
+    background-color: vBlue;
+  }
+}
+
+.rounded {
+  background-color: vBlueLight;
+  height: 24px;
+  border-radius: 12px;
+
+  &:not(.active, :disabled, .noHover):hover {
+    background-color: #c9ecfe;
+  }
+}
+
+.subdued,
+.subdued-inverse,
+.subdued-compact {
+  composes: button;
+  background-color: transparent;
+  color: vInk;
+
+  &:hover:not(.disabled, .noHover, .active) {
+    background-color: rgb(0 0 0 / 7%);
+  }
+
+  &:active {
+    background-color: rgb(0 0 0 / 15%) !important;
+    opacity: 1;
+    transition: 0s !important;
+  }
+
+  &.active {
+    background-color: vBlue;
+    border-color: vBlue;
+    color: vWhite;
+
+    .badge {
+      color: vBlue;
+      background-color: vWhite;
+    }
+  }
+
+  .badge {
+    color: vWhite;
+    background-color: vInk;
+  }
+}
+
+.subdued-inverse {
+  color: vWhite;
+}
+
+.subdued-compact {
+  margin: 4px;
+  padding: 4px;
+  height: initial;
+}
+
+.breakLongContent {
+  width: auto;
+  text-align: left;
+  height: auto;
+  word-break: break-word;
+
+  .text {
+    white-space: initial;
+  }
+}
+
+.content-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &.cutText {
+    width: 100%;
+    justify-content: center;
+  }
+
+  &.pending {
+    visibility: hidden;
+  }
+}
+
+.spinner-wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.text {
+  composes: cut-text;
+
+  &.size {
+    &-small {
+      font-size: 12px;
+    }
+
+    &-large {
+      font-size: 14px;
+    }
+  }
+}
