@@ -21,8 +21,7 @@ that can be further modified and expanded.
 
 ## Example 1
 
-![Custom popup
-example 1](/_static/images/tm_popup_examples/example-popup-1.png)
+![Custom popup example 1](/_static/images/tm_popup_examples/example-popup-1.png)
 
 Example code:
 
@@ -49,8 +48,7 @@ to be provided.
 
 ## Example 2
 
-![Custom popup
-example 2](/_static/images/tm_popup_examples/example-popup-2.png)
+![Custom popup example 2](/_static/images/tm_popup_examples/example-popup-2.png)
 
 Example code:
 
@@ -77,8 +75,7 @@ to be provided.
 
 ## Example 3
 
-![Custom popup
-example 3](/_static/images/tm_popup_examples/example-popup-3.png)
+![Custom popup example 3](/_static/images/tm_popup_examples/example-popup-3.png)
 
 Example code:
 

@@ -14,15 +14,12 @@ To fetch data directly from a report, follow these steps:
 5.  Click the three-dot icon next to the report section that you want to
     use.
 
-![API call definition in Piwik
-PRO](/_static/images/api-call-definition/click-three-dot-icon.png)
+![API call definition in Piwik PRO](/_static/images/api-call-definition/click-three-dot-icon.png)
 
 6.  Click **View API call definition**.
 
-![API call definition in Piwik
-PRO](/_static/images/api-call-definition/api-call-definition.png)
+![API call definition in Piwik PRO](/_static/images/api-call-definition/api-call-definition.png)
 
 7.  Copy an **API endpoint** or **API query**.
 
-![API call definition in Piwik
-PRO](/_static/images/api-call-definition/copy-api-call-definition.png)
+![API call definition in Piwik PRO](/_static/images/api-call-definition/copy-api-call-definition.png)
