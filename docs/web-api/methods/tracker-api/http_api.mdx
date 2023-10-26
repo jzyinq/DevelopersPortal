@@ -20,13 +20,7 @@ rejected completely.
 
 </div>
 
-<div id='redoc-container'>
-</div>
-<script>
-  (function() {
-  Redoc.init('/_static/api/tracker_tracking_api.json', {}, document.getElementById('redoc-container'), () => {
-    window.prepareRedocMenu ? window.prepareRedocMenu() : setTimeout(() => {
-      window.prepareRedocMenu()
-    }, 2000)
-  })})();
-</script>
+
+import RedocBrowser from '@site/src/components/RedocBrowser';
+
+<RedocBrowser src="/_static/api/tracker_tracking_api.json"/>
