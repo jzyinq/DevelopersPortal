@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-FILES=*.rst
+FILES=$(find . -type f -name "*.rst")
 for f in $FILES
 do
   filename="${f%.*}"
