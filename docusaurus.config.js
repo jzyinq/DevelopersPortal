@@ -80,7 +80,6 @@ const config = {
   themeConfig:
   /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
       navbar: {
         title: 'Developers',
@@ -91,29 +90,35 @@ const config = {
         items: [
           {
             type: 'doc',
-            docId: 'webapi/index',
+            docId: 'web-api/index',
             position: 'left',
             label: 'Web API',
           },
           {
             type: 'doc',
-            docId: 'analytics/index',
+            docId: 'js-api/index',
             position: 'left',
-            label: 'Analytics',
+            label: 'JS API',
           },
           {
             type: 'doc',
-            docId: 'data-collection/index',
+            docId: 'integrations/index',
             position: 'left',
-            label: 'Data Collection',
+            label: 'Integrations',
+          },
+          {
+            type: 'doc',
+            docId: 'other/index',
+            position: 'left',
+            label: 'Other',
+          },
+          {
+            type: 'doc',
+            docId: 'changelog',
+            position: 'left',
+            label: 'Changelog',
           },
           {to: '/api', label: 'Api', position: 'left'},
-          {to: '/blog', label: 'Blog', position: 'left'},
-          {
-            href: 'https://github.com/facebook/docusaurus',
-            label: 'GitHub',
-            position: 'right',
-          },
         ],
       },
       footer: {
