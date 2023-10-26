@@ -31,7 +31,7 @@ Alternatively, your editor might support dart pub get or flutter pub get. Check 
 #### Import it
 Now in your Dart code, you can use:
 
-import 'package:flutter_piwikpro/flutter_piwikpro.dart';
+`import 'package:flutter_piwikpro/flutter_piwikpro.dart';`
 
 #### Configuration
 

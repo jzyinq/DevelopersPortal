@@ -63,7 +63,7 @@ Note: Ecommerce conversion was reported
 conversions | as goal conversion for goal\_id 0. | `{"column_id":
 "ecommerce_conversions"}` | | | | |
 +----------------------------------+---------------------------------------------+-----------------------------------------------------+
-| Goal conversions (specific goal) | [goal]()\<idGoal\>\_nb\_conversions
+| Goal conversions (specific goal) | \<idGoal\>\_nb\_conversions
 | `{"column_id": "goal_conversions", "goal_id": 1}` |
 +----------------------------------+---------------------------------------------+-----------------------------------------------------+
 | Ecommerce abandoned carts | – | `{"column_id":
@@ -133,7 +133,7 @@ ecommerce revenue was reported
 | Sum of ecommerce revenue | as goal revenue for goal\_id 0 |
 `{"column_id": "revenue", "transformation_id": "sum"}` |
 +-------------------------------------+---------------------------------+-----------------------------------------------------------------------------+
-| Sum of goal revenue (specific goal) | [goal]()\<idGoal\>\_revenue |
+| Sum of goal revenue (specific goal) | \<idGoal\>\_revenue |
 `{"column_id": "goal_revenue", "transformation_id": "sum",
 "goal_id": 1}` |
 +-------------------------------------+---------------------------------+-----------------------------------------------------------------------------+
