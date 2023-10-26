@@ -8,6 +8,6 @@ implementation and observing changes done to it.
 </div>
 <script>
     (function() {
-        Redoc.init('../../_static/api/tracker_debugger_api.json', {}, document.getElementById('redoc-container'), () => {window.prepareRedocMenu ? window.prepareRedocMenu() : setTimeout(()=>{window.prepareRedocMenu()}, 2000)});
+        Redoc.init('/static/_static/api/tracker_debugger_api.json', {}, document.getElementById('redoc-container'), () => {window.prepareRedocMenu ? window.prepareRedocMenu() : setTimeout(()=>{window.prepareRedocMenu()}, 2000)});
     })();
 </script>

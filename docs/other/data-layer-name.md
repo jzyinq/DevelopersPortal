@@ -46,7 +46,7 @@ To rename the data layer, follow these steps:
     steps.
 
 ![Asynchronous container code - copy to
-clipboard](../_static/images/data_layer_name/install_manually_basic_container.png)
+clipboard](/static/_static/images/data_layer_name/install_manually_basic_container.png)
 
 7.  In the copied code, change `dataLayer` to a custom name.
 
@@ -57,7 +57,7 @@ clipboard](../_static/images/data_layer_name/install_manually_basic_container.pn
 ```
 
 ![Asynchronous container code - data layer
-name](../_static/images/data_layer_name/data_layer_name.png)
+name](/static/_static/images/data_layer_name/data_layer_name.png)
 
 8.  Paste the code right after the opening **\<body\>** tag on every
     page of your website or app.
@@ -65,7 +65,7 @@ name](../_static/images/data_layer_name/data_layer_name.png)
     code in the next steps.
 
 ![Synchronous container code - copy to
-clipboard](../_static/images/data_layer_name/install_manually_additional_container.png)
+clipboard](/static/_static/images/data_layer_name/install_manually_additional_container.png)
 
 10. In the copied code, change `dataLayer` to a custom name.
 
@@ -76,7 +76,7 @@ clipboard](../_static/images/data_layer_name/install_manually_additional_contain
 ```
 
 ![Synchronous container code - data layer
-name](../_static/images/data_layer_name/data_layer_name_additional_container.png)
+name](/static/_static/images/data_layer_name/data_layer_name_additional_container.png)
 
 <div class="note">
 
@@ -120,7 +120,7 @@ To rename the data layer in our WordPress plugin, follow these steps:
 2.  In **Data layer**, change the name to a custom one.
 
 ![Piwik PRO WordPress plugin settings - data layer
-name](../_static/images/data_layer_name/data_layer_wp_plugin.png)
+name](/static/_static/images/data_layer_name/data_layer_wp_plugin.png)
 
 3.  Click **Save changes**.
 4.  Replace all existing references to the old data layer name. For

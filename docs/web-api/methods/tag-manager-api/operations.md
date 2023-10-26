@@ -4,6 +4,6 @@
 </div>
 <script>
     (function() {
-        Redoc.init('../../_static/api/tag_manager_authorized_api_operations.json', {}, document.getElementById('redoc-container'), () => {window.prepareRedocMenu ? window.prepareRedocMenu() : setTimeout(()=>{window.prepareRedocMenu()}, 2000)});
+        Redoc.init('/static/_static/api/tag_manager_authorized_api_operations.json', {}, document.getElementById('redoc-container'), () => {window.prepareRedocMenu ? window.prepareRedocMenu() : setTimeout(()=>{window.prepareRedocMenu()}, 2000)});
     })();
 </script>
