@@ -1,10 +1,5 @@
-<div id="JS API Consent Manager">
+# JS API Consent Manager
 
-|                 |
-| --------------- |
-| Consent Manager |
-
-</div>
 
 <div class="toctree" data-maxdepth="1">
 

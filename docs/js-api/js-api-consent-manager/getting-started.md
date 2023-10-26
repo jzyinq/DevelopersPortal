@@ -1,10 +1,4 @@
-<div id="getting-started">
-
-|                 |
-| --------------- |
-| Getting started |
-
-</div>
+# Getting started
 
 Our JavaScript library has methods that let you use Consent Manager. You
 can use these methods in JavaScript.

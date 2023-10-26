@@ -1,10 +1,4 @@
-<div id="web-api">
-
-|         |
-| ------- |
-| Web API |
-
-</div>
+# Web API
 
 Our web API lets you access data and features in Piwik PRO. Whether you
 need to get raw data, manage tags or add a new user, no problem – our

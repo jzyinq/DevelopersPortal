@@ -1,10 +1,4 @@
-<div id="JS API Analytics">
-
-|           |
-| --------- |
-| Analytics |
-
-</div>
+# JS API Analytics
 
 <div class="toctree" data-maxdepth="1">
 

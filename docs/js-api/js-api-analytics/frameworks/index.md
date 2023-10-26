@@ -1,6 +1,4 @@
-|            |
-| ---------- |
-| Frameworks |
+# Frameworks
 
 If you use React or Angular to build your website or web app, you can
 install our dedicated libraries and use Piwik PRO to collect visitor
