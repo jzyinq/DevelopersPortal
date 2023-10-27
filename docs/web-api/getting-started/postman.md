@@ -5,14 +5,14 @@ Postman
 
 Here are the Swagger docs that you can you import:
 
-* <a href="_static/api/platform_access_control_authorized_api.json" target="_blank">Access control</a>
-* <a href="_static/api/platform_apps_authorized_api.json" target="_blank">Apps</a>
-* <a href="_static/api/platform_audit_log_authorized_api.json" target="_blank">Audit log</a>
-* <a href="_static/api/platform_meta_sites_authorized_api.json" target="_blank">Meta Sites</a>
-* <a href="_static/api/platform_modules_authorized_api.json" target="_blank">Modules</a>
-* <a href="_static/api/platform_tracker_settings_authorized_api.json" target="_blank">Tracker settings</a>
-* <a href="_static/api/platform_users_authorized_api.json" target="_blank">Users</a>
-* <a href="_static/api/platform_user_groups_authorized_api.json" target="_blank">User Groups</a>
+* <a href="static/api/platform_access_control_authorized_api.json" target="_blank">Access control</a>
+* <a href="static/api/platform_apps_authorized_api.json" target="_blank">Apps</a>
+* <a href="static/api/platform_audit_log_authorized_api.json" target="_blank">Audit log</a>
+* <a href="static/api/platform_meta_sites_authorized_api.json" target="_blank">Meta Sites</a>
+* <a href="static/api/platform_modules_authorized_api.json" target="_blank">Modules</a>
+* <a href="static/api/platform_tracker_settings_authorized_api.json" target="_blank">Tracker settings</a>
+* <a href="static/api/platform_users_authorized_api.json" target="_blank">Users</a>
+* <a href="static/api/platform_user_groups_authorized_api.json" target="_blank">User Groups</a>
 * And 12 more
 
 To use Postman, follow these steps:

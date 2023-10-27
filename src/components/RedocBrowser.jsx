@@ -5,7 +5,7 @@ const RedocBrowser = ({ src }) => {
   useEffect(() => {
     // Load redoc script dynamically
     const redocScript = document.createElement('script');
-    redocScript.src = '/_static/js/redoc.2.0.0-rc.23.min.js';
+    redocScript.src = '/static/js/redoc.2.0.0-rc.23.min.js';
     redocScript.onload = () => {
       // Initialize Redoc after script loads
       if (window.Redoc) {

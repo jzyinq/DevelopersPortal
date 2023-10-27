@@ -30426,7 +30426,7 @@
           "Queries"
         ],
         "summary": "Execute query",
-        "description": "API that allows querying the database directly. Please note that each\nrequest must be authenticated.\n\n#### Copy definition\n\nYou can use the **View API call definition** option\navailable in Analytics module in each report to get more\nusage examples based on your existing reports.\n\n![View API call definition](../../_static/images/copy-api-call.png)\n\n\n#### Compression\n\nWhen requesting large amount of data, make sure to include\nan **Accept-Encoding: gzip** header to enable\ncompression.\n\n\n#### Cache\n\nPlease note that all query results are cached for 10 minutes.\n",
+        "description": "API that allows querying the database directly. Please note that each\nrequest must be authenticated.\n\n#### Copy definition\n\nYou can use the **View API call definition** option\navailable in Analytics module in each report to get more\nusage examples based on your existing reports.\n\n![View API call definition](../../static/images/copy-api-call.png)\n\n\n#### Compression\n\nWhen requesting large amount of data, make sure to include\nan **Accept-Encoding: gzip** header to enable\ncompression.\n\n\n#### Cache\n\nPlease note that all query results are cached for 10 minutes.\n",
         "requestBody": {
           "required": true,
           "content": {
