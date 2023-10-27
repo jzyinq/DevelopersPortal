@@ -66,7 +66,7 @@ Tracking Client:
 Here you can see how to look for JavaScript Tracking Client cookie in
 Google Chrome developer tools:
 
-![image](/_static/images/amp_integration/cookie-hash.png)
+![image](/static/images/amp_integration/cookie-hash.png)
 
 ## Tracking custom events
 

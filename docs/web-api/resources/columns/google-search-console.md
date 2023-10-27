@@ -22,10 +22,10 @@ Google Search Console integration.
 | Source                | source                         | session  | str          | string            | False    |                                                                                          |
 | Medium                | medium                         | session  | str          | string            | False    |                                                                                          |
 | Source/Medium         | source\_medium                 | session  | str          | string            | False    |                                                                                          |
-| Channel               | referrer\_type                 | session  | \[int, str\] | uint8             | False    | `referrer_type.json </_static/json/enum/referrer_type.json>`                             |
+| Channel               | referrer\_type                 | session  | \[int, str\] | uint8             | False    | `referrer_type.json </static/json/enum/referrer_type.json>`                             |
 | Referrer URL          | referrer\_url                  | session  | str          | string            | False    |                                                                                          |
-| Device type           | device\_type                   | session  | \[int, str\] | uint8             | True     | `device_type.json </_static/json/enum/device_type.json>`                                 |
-| Continent             | location\_continent\_iso\_code | session  | \[str, str\] | string(2)         | True     | `location_continent_iso_code.json </_static/json/enum/location_continent_iso_code.json>` |
+| Device type           | device\_type                   | session  | \[int, str\] | uint8             | True     | `device_type.json </static/json/enum/device_type.json>`                                 |
+| Continent             | location\_continent\_iso\_code | session  | \[str, str\] | string(2)         | True     | `location_continent_iso_code.json </static/json/enum/location_continent_iso_code.json>` |
 | Country               | location\_country\_name        | session  | \[str, str\] | string            | True     | ISO 3166-2 codes (e.g. "PL")                                                             |
 | Session entry URL     | session\_entry\_url            | session  | str          | string            | False    |                                                                                          |
 | Timestamp             | timestamp                      | session  | date         | not applicable    | False    | by default in Raw data API                                                               |
@@ -47,10 +47,10 @@ may be used in such queries.
 | Source            | source                         | session | str          | string            | False    |                                                                                          |
 | Medium            | medium                         | session | str          | string            | False    |                                                                                          |
 | Source/Medium     | source\_medium                 | session | str          | string            | False    |                                                                                          |
-| Channel           | referrer\_type                 | session | \[int, str\] | uint8             | False    | `referrer_type.json </_static/json/enum/referrer_type.json>`                             |
+| Channel           | referrer\_type                 | session | \[int, str\] | uint8             | False    | `referrer_type.json </static/json/enum/referrer_type.json>`                             |
 | Referrer URL      | referrer\_url                  | session | str          | string            | False    |                                                                                          |
-| Device type       | device\_type                   | session | \[int, str\] | uint8             | True     | `device_type.json </_static/json/enum/device_type.json>`                                 |
-| Continent         | location\_continent\_iso\_code | session | \[str, str\] | string(2)         | True     | `location_continent_iso_code.json </_static/json/enum/location_continent_iso_code.json>` |
+| Device type       | device\_type                   | session | \[int, str\] | uint8             | True     | `device_type.json </static/json/enum/device_type.json>`                                 |
+| Continent         | location\_continent\_iso\_code | session | \[str, str\] | string(2)         | True     | `location_continent_iso_code.json </static/json/enum/location_continent_iso_code.json>` |
 | Country           | location\_country\_name        | session | \[str, str\] | string            | True     | ISO 3166-2 codes (e.g. "PL")                                                             |
 | Session entry URL | session\_entry\_url            | session | str          | string            | False    |                                                                                          |
 | Timestamp         | timestamp                      | session | date         | not applicable    | False    | by default in Raw data API                                                               |
