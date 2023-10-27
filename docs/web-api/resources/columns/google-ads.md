@@ -25,7 +25,7 @@ Google Ads integration.
 | Medium                                   | medium                            | session  | str          | string            | False    |                                                                                                                             |
 | Source/Medium                            | source\_medium                    | session  | str          | string            | False    |                                                                                                                             |
 | Keyword                                  | keyword                           | session  | str          | string            | False    |                                                                                                                             |
-| Device type                              | device\_type                      | session  | \[int, str\] | uint8             | True     | `device_type.json </static/json/enum/device_type.json>`                                                                    |
+| Device type                              | device\_type                      | session  | \[int, str\] | uint8             | True     | `device_type.json </pstatic/json/enum/device_type.json>`                                                                    |
 | Session entry URL                        | session\_entry\_url               | session  | str          | string            | False    |                                                                                                                             |
 | Timestamp                                | timestamp                         | session  | date         | not applicable    | False    | by default in Raw data API                                                                                                  |
 | Website Name                             | website\_name                     | session  | \[str, str\] | not applicable    | False    | website UUID                                                                                                                |
@@ -36,8 +36,8 @@ Google Ads integration.
 | Ad Group ID (Google Ads)                 | google\_ads\_ad\_group\_id        | session  | int\_id      | int64             | False    |                                                                                                                             |
 | Ad Group Name (Google Ads)               | google\_ads\_ad\_group\_name      | session  | \[int, str\] | not applicable    | False    |                                                                                                                             |
 | Ad Group Ad ID (Google Ads)              | google\_ads\_ad\_group\_ad\_id    | session  | str\_id      | string            | False    |                                                                                                                             |
-| Ad Group Ad Network Type (Google Ads)    | google\_ads\_ad\_network\_type    | session  | \[str, str\] | string            | False    | `google_ads_ad_network_type.json </static/json/enum/google_ads_ad_network_type.json>`                                      |
-| Ad Group Keyword Match Type (Google Ads) | google\_ads\_keyword\_match\_type | external | \[str, str\] | string            | False    | `google_ads_keyword_match_type.json </static/json/enum/google_ads_keyword_match_type.json>`, not available in Raw data API |
+| Ad Group Ad Network Type (Google Ads)    | google\_ads\_ad\_network\_type    | session  | \[str, str\] | string            | False    | `google_ads_ad_network_type.json </pstatic/json/enum/google_ads_ad_network_type.json>`                                      |
+| Ad Group Keyword Match Type (Google Ads) | google\_ads\_keyword\_match\_type | external | \[str, str\] | string            | False    | `google_ads_keyword_match_type.json </pstatic/json/enum/google_ads_keyword_match_type.json>`, not available in Raw data API |
 
 1.  `Database type` is the source column of a dimension. `Enum` shows
     the ID type. `Not applicable` shows a dymamic dimension.
@@ -56,7 +56,7 @@ Here's a list of the metrics that you can use.
 | Medium                                | medium                         | session | str          | string            | False    |                                                                                        |
 | Source/Medium                         | source\_medium                 | session | str          | string            | False    |                                                                                        |
 | Keyword                               | keyword                        | session | str          | string            | False    |                                                                                        |
-| Device type                           | device\_type                   | session | \[int, str\] | uint8             | True     | `device_type.json </static/json/enum/device_type.json>`                               |
+| Device type                           | device\_type                   | session | \[int, str\] | uint8             | True     | `device_type.json </pstatic/json/enum/device_type.json>`                               |
 | Session entry URL                     | session\_entry\_url            | session | str          | string            | False    |                                                                                        |
 | Timestamp                             | timestamp                      | session | date         | not applicable    | False    | by default in Raw data API                                                             |
 | Website Name                          | website\_name                  | session | \[str, str\] | not applicable    | False    | website UUID                                                                           |
@@ -67,7 +67,7 @@ Here's a list of the metrics that you can use.
 | Ad Group ID (Google Ads)              | google\_ads\_ad\_group\_id     | session | int\_id      | int64             | False    |                                                                                        |
 | Ad Group Name (Google Ads)            | google\_ads\_ad\_group\_name   | session | \[int, str\] | not applicable    | False    |                                                                                        |
 | Ad Group Ad ID (Google Ads)           | google\_ads\_ad\_group\_ad\_id | session | str\_id      | string            | False    |                                                                                        |
-| Ad Group Ad Network Type (Google Ads) | google\_ads\_ad\_network\_type | session | \[str, str\] | string            | False    | `google_ads_ad_network_type.json </static/json/enum/google_ads_ad_network_type.json>` |
+| Ad Group Ad Network Type (Google Ads) | google\_ads\_ad\_network\_type | session | \[str, str\] | string            | False    | `google_ads_ad_network_type.json </pstatic/json/enum/google_ads_ad_network_type.json>` |
 
 1.  `Database type` is the source column of a dimension. `Enum` shows
     the ID type. `Not applicable` shows a dymamic dimension.
