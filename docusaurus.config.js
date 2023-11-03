@@ -8,7 +8,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
   title: 'PiwikPRO - Developers docs and guides',
   tagline: 'An analytics suite with a focus on user privacy and data security',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/favicon.png',
 
   // Set the production url of your site here
   url: 'https://docu.jzy.pl/',
