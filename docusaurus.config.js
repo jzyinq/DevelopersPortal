@@ -32,8 +32,11 @@ const config = {
     locales: ['en'],
   },
 
-  plugins: [require.resolve('docusaurus-lunr-search')],
-
+  plugins: [require.resolve('docusaurus-lunr-search'), '@docusaurus/theme-live-codeblock'],
+  themes: ['@docusaurus/theme-mermaid'],
+  markdown: {
+    mermaid: true,
+  },
   presets: [
     [
       '@docusaurus/preset-classic',
@@ -81,12 +84,24 @@ const config = {
   /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       // Replace with your project's social card
+      liveCodeBlock: {
+        playgroundPosition: 'bottom',
+      },
       image: 'img/docusaurus-social-card.jpg',
+      announcementBar: {
+        id: 'support_us',
+        content:
+          'Piwik PRO is merging with Cookie Information to help companies create better first-party data strategies - <strong>Find out what it means for you</strong>',
+        backgroundColor: '#006BD6',
+        textColor: 'white',
+        isCloseable: false,
+      },
       navbar: {
         title: 'Developers',
         logo: {
           alt: 'PiwikPRO Developers Logo',
-          src: 'img/piwik-logo.svgz',
+          src: 'img/pp-logo_black.svg',
+          srcDark: 'img/pp-logo_white.svg',
         },
         items: [
           {

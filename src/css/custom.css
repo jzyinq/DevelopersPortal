@@ -3,7 +3,7 @@
  * bundles Infima by default. Infima is a CSS framework designed to
  * work well for content-centric websites.
  */
-
+ @import url('https://fonts.googleapis.com/css?family=Inter');
 /* You can override the default Infima variables here. */
 :root {
   --ifm-color-primary: #006bd6;
@@ -15,6 +15,8 @@
   --ifm-color-primary-lightest: #48a2ff;
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+  --ifm-font-family-base: 'Inter';
+  --ifm-h1-font-size: 2.5rem
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
@@ -28,3 +30,44 @@
   --ifm-color-primary-lightest: #48a2ff;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
+
+.theme-doc-sidebar-item-link, .menu__list-item-collapsible {
+  margin: 6px 12px 0 12px;
+  border: none;
+  color: #0C0F12;
+  font-family: "Inter";
+  font-size: 14px;
+  letter-spacing: 0;
+}
+
+.menu__list-item-collapsible {
+  font-weight: 700;
+  border-radius: 0;
+}
+
+.menu__list-item-collapsible--active, .theme-doc-sidebar-item-link--active {
+  background: #D5D9E0 ;
+}
+
+.menu__link {
+  color: #0C0F12;
+  border-radius: 0;
+}
+
+.menu {
+  background-color: #F2F4F8;
+}
+
+.navbar__logo  {
+  height: 20px;
+}
+.navbar__brand {
+  /* color: #FFFFFF; */
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 24px;
+  padding-left: 16px;
+  vertical-align: text-top;
+}
+
