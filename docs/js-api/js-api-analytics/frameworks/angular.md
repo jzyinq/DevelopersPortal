@@ -100,10 +100,9 @@ subscribing to the page view events manually.
 
 2.  Additionally, you can use the following include/exclude settings:
 
->   - { include: \[ '/full-uri-match' \] } – simple route matching
->   - { include: \[ '*/public/*' \] } – wildcard route matching
->   - { include: \[ /^/public/.\*/ \] } – regular expression route
->     matching
+>- \{ include: \[ '/full-uri-match' \] \} – simple route matching
+>- \{ include: \[ '*/public/*' \] \} – wildcard route matching
+>- \{ include: \[ /^/public/.\*/ \] \} – regular expression route matching
 
 Example:
 

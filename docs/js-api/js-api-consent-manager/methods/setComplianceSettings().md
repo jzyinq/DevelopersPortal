@@ -14,8 +14,8 @@ ppms.cm.api('setComplianceSettings', settings, onFulfilled, onRejected);
 ## Parameters
 
 **settings** (object, required)  
-The consent settings object. Example: `{consents: {analytics:
-{status: 1}}}`  
+The consent settings object. Example: `\{consents: \{analytics:
+\{status: 1\}\}\}`  
 Where `consent.analytics` is consent type and status indicate:
 
   - `0`: A visitor rejected consent.

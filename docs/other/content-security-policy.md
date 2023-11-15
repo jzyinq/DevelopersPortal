@@ -8,7 +8,7 @@ can execute on page. It can be done either by adding a
 `Content-Security-Policy` header or an appropriate meta tag.
 
 You can read about Consent Security Policy here:
-<https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP>
+https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP
 
 Content Security Policy nonce configuration ---------------It is common
 to allow only scripts and styles that were received from known domains
@@ -129,7 +129,7 @@ Note
 built-in templates are adjusted to work with Content Security Policy.
 This includes e.g. Google Analytics. In such cases, please refer to
 documentation of each respective tool (e.g.
-<https://developers.google.com/web/fundamentals/security/csp>).
+https://developers.google.com/web/fundamentals/security/csp).
 
 </div>
 
